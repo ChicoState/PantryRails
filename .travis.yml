@@ -3,22 +3,3 @@ dist: xenial
 language: ruby
 rvm:
   - 2.6.5
-gemfile:
-  - gemfiles/Gemfile-rails.5.2.x
-  - gemfiles/Gemfile-rails.6.0.x
-  - gemfiles/Gemfile-rails-edge
-before_install: 
-  - sudo gem install bundler
-script: 
-  - bundle exec rake spec
-matrix:
-  allow_failures:
-    - gemfile: gemfiles/Gemfile-rails-edge
-    - rvm: ruby-head
-exclude:
-    - rvm: 2.4.9
-    gemfile: gemfiles/Gemfile-rails-edge
-    - rvm: 2.5.5
-    gemfile: gemfiles/Gemfile-rails-edge
-    - rvm: 2.4.9
-    gemfile: gemfiles/Gemfile-rails.6.0.x
