@@ -1,9 +1,9 @@
 os: linux
 dist: xenial
 language: ruby
+nvm:
+  - 2.5.3
 before_install: 
-  - sudo rvm install 2.6.5
-  - sudo rvm use 2.6.5
   - yes | gem update --system --force
   - sudo gem install bundler
 install:
