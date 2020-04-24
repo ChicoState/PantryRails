@@ -5,4 +5,7 @@ rvm:
 before_install: 
   - yes | gem update --system --force
   - gem --version
-  - sudo gem install bundler
+  - bundle --version
+script:
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
