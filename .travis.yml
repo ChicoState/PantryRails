@@ -6,5 +6,3 @@ nvm:
 before_install: 
   - yes | gem update --system --force
   - sudo gem install bundler
-install:
-  - sudo gem install rails
