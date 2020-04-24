@@ -4,6 +4,7 @@ language: ruby
 rvm:
   - 2.6.5
 before_install: 
+  - yes | gem update --system --force
   - sudo gem install bundler
 install:
   - sudo gem install rails
