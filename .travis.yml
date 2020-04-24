@@ -3,7 +3,7 @@ dist: xenial
 language: ruby
 rvm:
   - 2.6.5
-gemfile:
-  - Pantry/Gemfile
 before_install: 
   - sudo gem install bundler
+install:
+  - gem install rails
