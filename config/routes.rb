@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get 'provider' => 'pages#provider'
   get 'additem' => 'pages#additem'
   get 'checkout' => 'pages#checkout'
-  resources :main
+  resources :pages
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
