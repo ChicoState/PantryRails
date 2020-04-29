@@ -6,6 +6,10 @@ before_install:
   - yes | gem update --system --force
   - gem --version
   - bundle update --bundler
+  - git clone https://github.com/TravisToolbox/rubocop-travis.git
+install:
+  - ./rubocop-travis/install.sh  
 script:
   - bundle exec rake db:create
   - bundle exec rake db:migrate
+  - ./rubocop-travis/scan.sh
