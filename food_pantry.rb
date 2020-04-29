@@ -11,7 +11,11 @@ class Inventory < FoodPantry
         puts "Food Pantry"
     end
 end
-
+class Items < Inventory
+    def ItemDetails
+        return ItemID
+    end
+end
 pantryObject = Inventory.new
 
 pObj = pantryObject.checkStatusInventory
