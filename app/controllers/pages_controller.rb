@@ -9,9 +9,24 @@ class PagesController < ApplicationController
         @content = 'This is the Measuring Impact page'
     end
 
+    def show
+        @additem = Additem.find(params[:id])
+    end
+
     def additem
         @title = 'Add Item';
         @content = 'This is the Add Item page'
+    end
+
+    def create
+        # render plain: params[:additem].inspect
+        @additem = Additem.new(additem_params)
+        @additem.save
+        redirect_to @additem
+    end
+
+    private def additem_params
+        params.require(:additem).permit(:name, :donor, :quantity, :received, :expiry, :price)
     end
 
     def inventory

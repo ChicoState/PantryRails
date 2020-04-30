@@ -1,30 +1,29 @@
-<h1><%= @title %></h1>
-<p><%= @content %></p>
-<%= form_for :pages do |f| %>
+<h1>Add Items</h1>
+<%= form_for :'items', url: items_path do |f| %>
 <table class="table table-striped">
     <tr>
         <td><%= f.label :Name %></td>
-        <td><%= f.text_field :Name %></td>
+        <td><%= f.text_field :name %></td>
     </tr>
     <tr>
         <td><%= f.label :Donor %></td>
-        <td><%= f.text_field :Donor %></td>
+        <td><%= f.text_field :donor %></td>
     </tr>
     <tr>
         <td><%= f.label :Quantity %></td>
-        <td><%= f.text_field :Quantity %></td>
+        <td><%= f.text_field :quantity %></td>
     </tr>
     <tr>
         <td><%= f.label :'Received Date' %></td>
-        <td><%= f.text_field :Received %></td>
+        <td><%= f.text_field :received %></td>
     </tr>
     <tr>
         <td><%= f.label :'Expiry Date' %></td>
-        <td><%= f.text_field :Expiry %></td>
+        <td><%= f.text_field :expiry %></td>
     </tr>
     <tr>
         <td><%= f.label :Price %></td>
-        <td><%= f.text_field :Price %></td>
+        <td><%= f.text_field :price %></td>
     </tr>
     <tr>
         <td colspan="2"><%= f.submit %></td>
