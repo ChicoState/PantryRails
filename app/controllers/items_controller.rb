@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
     def index
-        redirect_to(:action=>'new')
+        # redirect_to(:action=>'new')
+        @items = Item.all
     end
     
     def new
