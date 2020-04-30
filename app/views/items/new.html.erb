@@ -1,4 +1,13 @@
-<h1>Add Items</h1>
+<table style="width:100%">
+    <tr>
+        <td><h1>Add Items</h1></td>
+        <td style="float:right">
+            <a href="/items">
+                <button type="button" class="btn btn-info" value="edit">Goto Items</button>
+            </a>
+        </td>
+    </tr>
+</table>
 <%= form_for :'items', url: items_path do |f| %>
 <table class="table table-striped">
     <tr>
