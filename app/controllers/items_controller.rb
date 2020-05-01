@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
     end
     
     def new
-
+        @items = Item.new
     end
     
     def show
@@ -15,8 +15,11 @@ class ItemsController < ApplicationController
     def create
         # render plain: params[:additem].inspect
         @items = Item.new(items_params)
-        @items.save
-        redirect_to @items
+        if(@items.save)
+            redirect_to @items
+        else
+            render 'new'
+        end
     end
 
     private def items_params
