@@ -1,0 +1,32 @@
+<h1><%= @title %></h1>
+<p><%= @content %></p>
+<%= form_for :pages do |f| %>
+<table class="table table-striped">
+    <tr>
+        <td><%= f.label :Name %></td>
+        <td><%= f.text_field :Name %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :Donor %></td>
+        <td><%= f.text_field :Donor %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :Quantity %></td>
+        <td><%= f.text_field :Quantity %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Received Date' %></td>
+        <td><%= f.text_field :Received %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Expiry Date' %></td>
+        <td><%= f.text_field :Expiry %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :Price %></td>
+        <td><%= f.text_field :Price %></td>
+    </tr>
+    <tr>
+        <td colspan="2"><%= f.submit %></td>
+    </tr>
+<% end %>
