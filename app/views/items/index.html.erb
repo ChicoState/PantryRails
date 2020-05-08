@@ -11,9 +11,10 @@
 <table class="table table-striped">
 <thead>
     <tr>
-    <th scope="col">Name</th>
-    <th scope="col">Donor</th>
-    <th scope="col">Quantity</th>
+    <th scope="col">Item Name</th>
+    <th scope="col">Provider Name</th>
+    <th scope="col">Incoming Quantity</th>
+    <th scope="col">Available Quantity</th>
     <th scope="col">Received Date</th>
     <th scope="col">Expiry Date</th>
     <th scope="col">Price</th>
@@ -25,10 +26,12 @@
     <td><%= item.name %></td>
     <td><%= item.donor %></td>
     <td><%= item.quantity %></td>
+    <td><%= item.quantity %></td>
     <td><%= item.received %></td>
     <td><%= item.expiry %></td>
     <td><%= item.price %></td>
     <td>
+        <%= link_to "CheckedOut Details", edit_item_path(item.id), :class => 'btn btn-primary' %>
         <%= link_to "Edit", edit_item_path(item.id), :class => 'btn btn-warning' %>
         <%= link_to "Delete", item_path(item.id), method: :delete, data: {confirm: 'Are you sure ?'}, :class => 'btn btn-danger' %>
     </td>
