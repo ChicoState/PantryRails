@@ -8,7 +8,7 @@
         </td>
     </tr>
 </table>
-<%= form_for :'provider', url: provider_path do |f| %>
+<%= form_for :'provider', url: providers_path do |f| %>
 <% if @provider.errors.any? %>
     <% @provider.errors.full_messages.each do |msg| %>
         <div class="alert alert-danger"><%=msg %></div>
@@ -16,18 +16,19 @@
 <% end %>
 <table class="table table-striped">
     <tr>
-    <td><%= f.label :anonymous %>&nbsp&nbsp
-        <%= check_box_tag(:anonymous, :onclick => "$('#inputBox')[this.checked ? 'show' : 'hide']();") %></td>
-    <td><%= f.label :Name %>&nbsp&nbsp
-        <%= f.text_field :providername %></td>
+    <td>
+        <%= f.label :Anonymous %>&nbsp&nbsp
+        <%= f.check_box(:anonymous, {:onclick => 'alert("Here")'}) %>
+    </td>
+    <td><%= f.label :Name %>&nbsp&nbsp<%= f.text_field :Name %></td>
     </tr>
     <tr>
     <td><%= f.label :'Provider Type' %></td>
-    <td><%= f.select :description, [['Individual','Individual'], ['Organization','Organization']] %></td>
+    <td><%= f.select :DType, [['Individual','Individual'], ['Organization','Organization']] %></td>
     </tr>
     <tr>
     <td><%= f.label :'Donation Type' %></td>
-    <td><%= f.select :totaldonations, [['Donated','Donated'], ['Purchased','Purchased']] %></td>
+    <td><%= f.select :DonType, [['Donated','Donated'], ['Purchased','Purchased']] %></td>
     </tr>
     <tr>
     <td colspan="2"><%= f.submit %></td>
