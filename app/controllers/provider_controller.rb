@@ -43,6 +43,6 @@ class ProviderController < ApplicationController
     end
 
     private def providers_params
-        params.require(:provider).permit(:providername, :description, :totaldonations)
+        params.require(:provider).permit(:providername, :description, :totaldonations, :anonymous)
     end
 end
