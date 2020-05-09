@@ -1,0 +1,24 @@
+<h1><%= @title %>Student Records</h1>
+<p><%= @content %></p>
+<%= form_for :pages do |f| %>
+<table class="table table-striped">
+    <tr>
+        <td><%= f.label :Name %></td>
+        <td><%= f.text_field :Name %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :ID %></td>
+        <td><%= f.text_field :id %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :Items %></td>
+        <td><%= f.text_field :items %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Transaction Date' %></td>
+        <td><%= f.text_field :date %></td>
+    </tr>
+    <tr>
+        <td colspan="2"><%= f.submit %></td>
+    </tr>
+<% end %>
