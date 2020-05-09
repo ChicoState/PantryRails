@@ -1,0 +1,20 @@
+<h1>Add Provider</h1>
+<%= form_for :pages do |f| %>
+    <table class="table table-striped">
+        <tr>
+            <td><%= f.label :Anonymous %>&nbsp&nbsp<%= f.check_box :Anonymous %></td>
+            <td><%= f.label :Name %>&nbsp&nbsp<%= f.text_field :Name %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :'Provider Type' %></td>
+            <td><%= f.select :DType, [['Individual','Individual'], ['Organization','Organization']] %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :'Donation Type' %></td>
+            <td><%= f.select :DonType, [['Donated','Donated'], ['Purchased','Purchased']] %></td>
+        </tr>
+        <tr>
+            <td colspan="2"><%= f.submit %></td>
+        </tr>
+<% end %>
+    

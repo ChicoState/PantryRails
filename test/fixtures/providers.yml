@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  provider-name: MyString
+  description: MyText
+  total-donations: 1.5
+
+two:
+  provider-name: MyString
+  description: MyText
+  total-donations: 1.5

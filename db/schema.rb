@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_30_074613) do
+ActiveRecord::Schema.define(version: 2020_05_08_223814) do
 
-  create_table "additems", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.text "name"
     t.text "donor"
     t.integer "quantity"
@@ -23,13 +23,10 @@ ActiveRecord::Schema.define(version: 2020_04_30_074613) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "items", force: :cascade do |t|
-    t.text "name"
-    t.text "donor"
-    t.integer "quantity"
-    t.date "received"
-    t.date "expiry"
-    t.integer "price"
+  create_table "providers", force: :cascade do |t|
+    t.string "providername"
+    t.text "description"
+    t.float "totaldonations"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
