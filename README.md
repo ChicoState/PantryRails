@@ -31,7 +31,7 @@ By using RuboCop, we will not only get to perform a code review as Ruby, but als
 Padam Rana, Zaiba Fathima, Piradeepan Nagarajan
 
 ## Copyright
-See [LICENSE](LICENSE) for further details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) for further details.
 
 ## UML Diagram
 ![UML of Food Pantry - Ruby on Rails](UML_Pantry_V2.png "PantryRails - UML class diagram of Food Pantry")
