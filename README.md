@@ -17,7 +17,9 @@ The installation part and gettign started with the project development is detail
 We use Travis CI for our project. It runs our programs tests every time we commit to GitHub. We are able to discover very quickly if our commit is broken, and fix it before it becomes a problem. More details on Travis can be found [here](https://docs.travis-ci.com/).
 
 ## Static Analysis Tool
-We use [Rubocop](https://github.com/rubocop-hq/rubocop) as static code alalyser for the project PantryRails
+We use [Rubocop](https://github.com/rubocop-hq/rubocop) as static code alalyser for the project PantryRails. The official docs for RuboCop can be found [here](https://docs.rubocop.org/en/stable/)
+
+By using RuboCop, we will not only get to perform a code review as Ruby, but also learn about Rails’ specific improvement points. 
 
 ## Project Contributing Members
 Padam Rana, Zaiba Fathima, Piradeepan Nagarajan
