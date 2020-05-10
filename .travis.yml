@@ -8,6 +8,7 @@ before_install:
   - gem --version
   - bundle update --bundler
   - git clone https://github.com/TravisToolbox/rubocop-travis.git
+  - gi clone https://github.com/rubocop-hq/rubocop.git
 install:
   - ./rubocop-travis/install.sh
   - gem install rubocop
