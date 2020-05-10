@@ -11,7 +11,8 @@ before_install:
   - bundle update --bundler
   - git clone https://github.com/TravisToolbox/rubocop-travis.git
 install:
-  - ./rubocop-travis/install.sh  
+  - ./rubocop-travis/install.sh
+  - gem install rubocop
 script:
   - bundle exec rake db:create
   - bundle exec rake db:migrate
