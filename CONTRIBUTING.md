@@ -72,7 +72,7 @@ Once the above installation is successful, clone the PantryRails repository and 
 ## Pull Request Process
 
 1. Branch from the travis branch and, if needed, rebase to the current master branch before submitting your pull request. If it doesn't merge cleanly with master you may be asked to rebase your changes.
-2. Update the README.md with details of changes to the interface, this includes new environment variables and all other useful file locations and parameters.
+2. Update the [README.md](README.md) with details of changes to the interface, this includes new environment variables and all other useful file locations and parameters.
 3. Commits should be as small as possible, while ensuring that each commit is correct independently (i.e., each commit should compile and pass tests). 
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 5. Don't put submodule updates in your pull request unless they are to landed commits.

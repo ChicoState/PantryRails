@@ -1,5 +1,8 @@
 os: linux
 language: ruby
+# Docker Infrastructure
+sudo: false
+cache: bundler
 rvm:
   - 2.6.5
 before_install: 
