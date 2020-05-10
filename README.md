@@ -10,7 +10,10 @@ Project is created with
 * Ruby on Rails
 * MySql
 
-## Maintenance Project
+## Prerequisites
+The installation part and gettign started witht he project development is detailed in the [contributing](CONTRIBUTING.md) section. 
+
+## Project Contributers
 Piradeepan Nagarajan, Zaiba Fathima, Padam Rana
 
 ## Continuous Integration Status
