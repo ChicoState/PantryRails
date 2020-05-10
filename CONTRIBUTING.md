@@ -14,60 +14,60 @@ Contributions to PantryRails should be made in the form of GitHub pull requests.
 This project was developed in the mac environment. Please find the below steps to install Ruby and Rails.
 
 #### Install home-brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 #### Package manager brew and rbenv
-brew update
+$ brew update
 
 #### Install ruby build
-brew install rbenv
+$ brew install rbenv
 
 #### Add the below line to bash_profile
-eval "$(rbenv init -)"
+$ eval "$(rbenv init -)"
 
 #### Execute the command in the terminal
-source .bash_profile
+$ source .bash_profile
 
 #### Install rbenv
-rbenv install 2.6.5
+$ rbenv install 2.6.5
 
 #### Run the below command and every time we install new version of ruby
-rbenv rehash
-rbenv versions
+$ rbenv rehash
+$ rbenv versions
 
 #### Check the version
-ruby -v
+$ ruby -v
 
 #### To switch to another version of ruby
-Rbenv global 2.6.5
+$ rbenv global 2.6.5
 
 #### To use the version inside that project
-Rbenv local system
-Rbenv local 2.6.5
+$ rbenv local system
+$ rbenv local 2.6.5
 
 #### Installing the gems package manager
-Gem -v
-Gem list
+$ gem -v
+$ gem list
 
 #### Installing Ruby on Rails
-Gem install rails
+$ gem install rails
 
 ####  Install mysql on MacOS
-Brew update
-Brew install mysql
+$ brew update
+$ brew install mysql
 
 ####  To set root password
-mysql_secure_installation
-brew services start mysql
-mysql -u root -p
+$ mysql_secure_installation
+$ brew services start mysql
+$ mysql -u root -p
 
 #### Install ruby gems for mysql
-gem install mysql2
-gem install mysql2 -- --with-opt-dir="$(brew --prefix openssl)"
+$ gem install mysql2
+$ gem install mysql2 -- --with-opt-dir="$(brew --prefix openssl)"
 
 #### Installing javascript tools for ruby and rails
-Brew install node
-Brew install yarn
+$ brew install node
+$ brew install yarn
 
 ## Pull Request Process
 
