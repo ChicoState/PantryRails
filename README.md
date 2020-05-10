@@ -11,10 +11,10 @@ Project is created with
 * MySql
 
 ## Prerequisites / Installation / Deployment
-The installation part and gettign started with the project development is detailed in the [contributing](CONTRIBUTING.md) section. 
+The installation part and gettign started with the project development is detailed in the [CONTRIBUTING.md](CONTRIBUTING.md). 
 
 ## Contributing
-Please read [contributing](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to the project.
+Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to the project.
 
 ## CI / CD Pipeline
 We use Travis CI for our project. It runs our programs tests every time we commit to GitHub. We are able to discover very quickly if our commit is broken, and fix it before it becomes a problem. More details on Travis can be found [here](https://docs.travis-ci.com/).
