@@ -7,7 +7,7 @@ PantryRail welcomes contributions from everyone.
 
 Contributions to PantryRails should be made in the form of GitHub pull requests. Each pull request will be reviewed by a core contributor (someone with permission) and either landed in the main tree or given feedback for changes that would be required.
 
-# Installation & Development 
+# Installation & Getting started with the project development 
 
 This project was developed in Runy & Rails under the mac OS environment. Please find the below steps to install Ruby and Rails.
 
@@ -66,6 +66,8 @@ $ gem install mysql2 -- --with-opt-dir="$(brew --prefix openssl)"
 #### Installing javascript tools for ruby and rails
 $ brew install node
 $ brew install yarn
+
+Once the above installation is successful, clone the PantryRails repository and start the server with the command $ rails server. Navigate to the browser and type http://127.0.0.1:3000. The PantryRails project should be successsfully running in the browser.
 
 ## Pull Request Process
 
