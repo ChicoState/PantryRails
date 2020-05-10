@@ -11,61 +11,61 @@ Contributions to PantryRails should be made in the form of GitHub pull requests.
 
 # Installation & Development 
 
-This project was developed in the mac environment. Installing Ruby
+This project was developed in the mac environment. Please find the below steps to install Ruby and Rails.
 
-### Install home-brew
+#### Install home-brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-### Package manager brew and rbenv
+#### Package manager brew and rbenv
 brew update
 
-### install ruby build
-Brew install rbenv
+#### Install ruby build
+brew install rbenv
 
-### Add the below line to bash_profile
+#### Add the below line to bash_profile
 eval "$(rbenv init -)"
 
-### Execute the command in the terminal
+#### Execute the command in the terminal
 source .bash_profile
 
-### Install rbenv
+#### Install rbenv
 rbenv install 2.6.5
 
-### Run the below command and every time we install new version of ruby
+#### Run the below command and every time we install new version of ruby
 rbenv rehash
 rbenv versions
 
-### Check the version
+#### Check the version
 ruby -v
 
-### To switch to another version of ruby
+#### To switch to another version of ruby
 Rbenv global 2.6.5
 
-### To use the version inside that project
+#### To use the version inside that project
 Rbenv local system
 Rbenv local 2.6.5
 
-### Installing the gems package manager
+#### Installing the gems package manager
 Gem -v
 Gem list
 
-### Installing Ruby on Rails
+#### Installing Ruby on Rails
 Gem install rails
 
-###  Install mysql on MacOS
+####  Install mysql on MacOS
 Brew update
 Brew install mysql
 
-###  To set root password
+####  To set root password
 mysql_secure_installation
 brew services start mysql
 mysql -u root -p
 
-### Install ruby gems for mysql
+#### Install ruby gems for mysql
 gem install mysql2
 gem install mysql2 -- --with-opt-dir="$(brew --prefix openssl)"
 
-### Installing javascript tools for ruby and rails
+#### Installing javascript tools for ruby and rails
 Brew install node
 Brew install yarn
 
@@ -78,7 +78,7 @@ Brew install yarn
 
 
 
-### Our Responsibilities
+#### Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
 
