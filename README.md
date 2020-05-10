@@ -10,11 +10,14 @@ Project is created with
 * Ruby on Rails
 * MySql
 
-## Prerequisites
-The installation part and gettign started witht he project development is detailed in the [contributing](CONTRIBUTING.md) section. 
+## Prerequisites / Installation / Deployment
+The installation part and gettign started with the project development is detailed in the [contributing](CONTRIBUTING.md) section. 
 
-## Project Contributers
-Piradeepan Nagarajan, Zaiba Fathima, Padam Rana
+## CI/CD Pipeline
+We use Travis CI for our project. It runs our programs tests every time we commit to GitHub. We are able to discover very quickly if our commit is broken, and fix it before it becomes a problem. More details on Travis can be found [here](https://docs.travis-ci.com/).
+
+## Project Contributing Members
+Padam Rana, Zaiba Fathima, Piradeepan Nagarajan
 
 ## Continuous Integration Status
 [![Build Status](https://travis-ci.org/ChicoState/PantryRails.svg?branch=travis)](https://travis-ci.org/ChicoState/PantryRails)
