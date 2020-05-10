@@ -1,0 +1,41 @@
+<table style="width:100%">
+    <tr>
+        <td><h1>Inventory</h1></td>
+        <td style="float:right">
+            <a href="/">
+                <button type="button" class="btn btn-info" value="edit">Dashboard</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<table class="table table-striped">
+<thead>
+    <tr>
+    <th scope="col">Item Name</th>
+    <th scope="col">Provider Name</th>
+    <th scope="col">Incoming Quantity</th>
+    <th scope="col">Available Quantity</th>
+    <th scope="col">Received Date</th>
+    <th scope="col">Expiry Date</th>
+    <th scope="col">Price</th>
+    <th scope="col" colspan=2>Action</th>
+    </tr>
+</thead>
+<% @items.each do |item| %>
+<tr>
+    <td><%= item.name %></td>
+    <td><%= item.donor %></td>
+    <td><%= item.quantity %></td>
+    <td><%= item.quantity %></td>
+    <td><%= item.received %></td>
+    <td><%= item.expiry %></td>
+    <td><%= item.price %></td>
+    <td>
+        <%= link_to "CheckedOut Details", edit_item_path(item.id), :class => 'btn btn-primary' %>
+        <%= link_to "Edit", edit_item_path(item.id), :class => 'btn btn-warning' %>
+        <%= link_to "Delete", item_path(item.id), method: :delete, data: {confirm: 'Are you sure ?'}, :class => 'btn btn-danger' %>
+    </td>
+</tr>
+<% end %>
+</table>
+<a class="navbar-link" href="/items/new"><button type="button" class="btn btn-warning" value="edit">Add New Item</button></a>

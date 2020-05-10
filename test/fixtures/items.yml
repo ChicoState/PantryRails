@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  donor: MyText
+  quantity: 1
+  received: 2020-04-30
+  expiry: 2020-04-30
+  price: 1
+
+two:
+  name: MyText
+  donor: MyText
+  quantity: 1
+  received: 2020-04-30
+  expiry: 2020-04-30
+  price: 1
