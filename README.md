@@ -13,6 +13,9 @@ Project is created with
 ## Prerequisites / Installation / Deployment
 The installation part and gettign started with the project development is detailed in the [contributing](CONTRIBUTING.md) section. 
 
+## Contributing
+Please read [contributing](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to the project.
+
 ## CI / CD Pipeline
 We use Travis CI for our project. It runs our programs tests every time we commit to GitHub. We are able to discover very quickly if our commit is broken, and fix it before it becomes a problem. More details on Travis can be found [here](https://docs.travis-ci.com/).
 
@@ -21,11 +24,14 @@ We use [Rubocop](https://github.com/rubocop-hq/rubocop) as static code alalyser 
 
 By using RuboCop, we will not only get to perform a code review as Ruby, but also learn about Rails’ specific improvement points. 
 
+## Continuous Integration Status
+[![Build Status](https://travis-ci.org/ChicoState/PantryRails.svg?branch=travis)](https://travis-ci.org/ChicoState/PantryRails)
+
 ## Project Contributing Members
 Padam Rana, Zaiba Fathima, Piradeepan Nagarajan
 
-## Continuous Integration Status
-[![Build Status](https://travis-ci.org/ChicoState/PantryRails.svg?branch=travis)](https://travis-ci.org/ChicoState/PantryRails)
+## Copyright
+See [LICENSE](LICENSE) for further details.
 
 ## UML Diagram
 ![UML of Food Pantry - Ruby on Rails](UML_Pantry_V2.png "PantryRails - UML class diagram of Food Pantry")
