@@ -1,9 +1,7 @@
 
-# Contributing
+# Contributing to PantryRails
 
 Thank you for your interest in PantryRails Project. Our goal is to develop a food pantry for students in a university, who can have access to enough food to eat. We want to create a system to manage the inventory of a food pantry, as well as generate reports about the pantry's activities. We are trying to design a website that manages the information.
-
-# Contributions
 
 PantryRail welcomes contributions from everyone.
 
