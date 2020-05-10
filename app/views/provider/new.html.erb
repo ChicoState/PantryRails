@@ -17,7 +17,9 @@
 <table class="table table-striped">
     <tr>
     <td><%= f.label :anonymous %>&nbsp&nbsp
-        <%= check_box_tag(:anonymous, :onclick => "$('#inputBox')[this.checked ? 'show' : 'hide']();") %></td>
+        <%= check_box_tag(:anonymous, checked = false,
+             { disabled: false,
+               onclick: "alert('hello world')" }) %></td>
     <td><%= f.label :Name %>&nbsp&nbsp
         <%= f.text_field :providername %></td>
     </tr>
