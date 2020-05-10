@@ -17,4 +17,4 @@ script:
   - bundle exec rake db:create
   - bundle exec rake db:migrate
   - ./rubocop-travis/scan.sh
-  - rubocop
+  - gem 'rubocop'
