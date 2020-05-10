@@ -77,7 +77,7 @@ Once the above installation is successful, clone the PantryRails repository and 
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 5. Don't put submodule updates in your pull request unless they are to landed commits.
 
-#### Our Responsibilities
+## Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
 
