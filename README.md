@@ -33,5 +33,12 @@ Padam Rana, Zaiba Fathima, Piradeepan Nagarajan
 ## Copyright
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) for further details.
 
+## Acknowledgments & Inspiration
+Our instructor [Kevin Buffardi, Ph.D.](https://www.csuchico.edu/csci/people/faculty/buffardi-kevin.shtml)
+[LinkedIn](https://www.linkedin.com/in/kevin-buffardi-5a84351/)
+[Github](https://github.com/kbuffardi)
+[Twitter](https://twitter.com/drkevinbuffardi?lang=en)
+[Google Scholar](https://scholar.google.com/citations?user=KmIt5HIAAAAJ&hl=en)
+
 ## UML Diagram
 ![UML of Food Pantry - Ruby on Rails](UML_Pantry_V2.png "PantryRails - UML class diagram of Food Pantry")
