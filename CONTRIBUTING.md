@@ -9,77 +9,66 @@ PantryRail welcomes contributions from everyone.
 
 Contributions to PantryRails should be made in the form of GitHub pull requests. Each pull request will be reviewed by a core contributor (someone with permission) and either landed in the main tree or given feedback for changes that would be required.
 
-# Development
+# Installation & Development 
 
 This project was developed in the mac environment. Installing Ruby
 
-Install home-brew
+### Install home-brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-//package manager brew and rbenv
-Brew update
+### Package manager brew and rbenv
+brew update
 
-//install ruby build
+### install ruby build
 Brew install rbenv
 
-//goto user directory
-Cd ~
-
-Vim .bash_profile and ~/.zshrc
-Add
+### Add the below line to bash_profile
 eval "$(rbenv init -)"
 
-Source .bash_profile
+### Execute the command in the terminal
+source .bash_profile
 
-Rbenv install —list
+### Install rbenv
+rbenv install 2.6.5
 
-Rbenv install 2.6.5
+### Run the below command and every time we install new version of ruby
+rbenv rehash
+rbenv versions
 
-// Run the below conn and every time we install new version of ruby
-Rbenv rehash
+### Check the version
+ruby -v
 
-Rbenv versions
-
-Ruby -v
-
-//to switch to another version of ruby
+### To switch to another version of ruby
 Rbenv global 2.6.5
 
-// to use the version inside that project
+### To use the version inside that project
 Rbenv local system
 Rbenv local 2.6.5
 
-
-// ruby gems package manager
+### Installing the gems package manager
 Gem -v
 Gem list
 
-//Installing Ruby on Rails
+### Installing Ruby on Rails
 Gem install rails
 
-Rbenv rehash
-Rails -v
-
-// Install mysql on MacOS
+###  Install mysql on MacOS
 Brew update
 Brew install mysql
 
-// To set root password
+###  To set root password
 mysql_secure_installation
+brew services start mysql
+mysql -u root -p
 
-Brew services start mysql
-
-Mysql -u root -p
-
-// Install ruby gems for mysql
+### Install ruby gems for mysql
 gem install mysql2
-
 gem install mysql2 -- --with-opt-dir="$(brew --prefix openssl)"
 
-//Installing javascript tools for ruby and rails
-
+### Installing javascript tools for ruby and rails
 Brew install node
 Brew install yarn
+
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
