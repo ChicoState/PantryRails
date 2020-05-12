@@ -24,11 +24,6 @@ class CheckoutController < ApplicationController
          return unless (params[:state] == "payment")
          return unless params[:item][:payments_attributes]
          payment_method_id = PaymentMethod.find(params[:item][:payments_attributes].first[:payment_method_id])
-         if payment_method_id.kind_of?(BillingIntegration::TwoCheckout)
-           load_item_with_lock
-           @item.payments.create(:amount => @item.total, :payment_method_id => payment_method_id.id)
-           redirect_to(two_checkout_payment_item_checkout_url(@item, :payment_method => payment_method_id))
-         end
         end
     
         def two_checkout_validate
@@ -38,7 +33,7 @@ class CheckoutController < ApplicationController
             item_number = params['item_number']
           end
           if Digest::MD5.hexdigest("#{payment_method.preferred(:secret_word)}#{payment_method.preferred(:sid)}#{item_number}#{'%.2f' % @item.total}").upcase != params['key']
-           abort("MD5 Hash did not match. If you are testing with demo sales please select test mode in your payment configuration.")
+           abort("MD5 does not match.")
           end
         end
     
