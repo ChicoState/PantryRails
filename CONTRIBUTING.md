@@ -11,6 +11,16 @@ Contributions to PantryRails should be made in the form of GitHub pull requests.
 
 This project was developed in Runy & Rails under the mac OS environment. Please find the below steps to install Ruby and Rails.
 
+## Prerequisites
+
+* Ruby 2.6.5 (or higher)
+* Ruby Gems
+  * rake
+  * bundler
+* A Rails-compatible SQL database
+  * PostgreSQL (recommended)
+  * MySql (works ok, too)
+
 #### Install home-brew
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
