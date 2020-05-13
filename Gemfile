@@ -25,8 +25,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-# Make errors better looking
-gem 'better_errors', '~> 2.7', '>= 2.7.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -46,6 +45,8 @@ group :development do
   gem 'guard', '~> 2.16', '>= 2.16.2'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # Make errors better looking
+  gem 'better_errors', '~> 2.7', '>= 2.7.1'
 end
 
 group :test do
