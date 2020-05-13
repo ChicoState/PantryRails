@@ -1,4 +1,6 @@
-<%= form_for :pages do |f| %>
+<%
+=begin%>
+ <%= form_for :pages do |f| %>
 
 <%= hidden_field_tag :cart_order_id, @item.label %>
 <%= hidden_field_tag :total, '%.2f' % @item.all %>
@@ -24,4 +26,6 @@
   <input type="submit" name="send_form" value="Submit">
 </form>
 <% if pm.preferred(:inline_checkout) == true %>
-<% end %>
+<% end %> 
+<%
+=end%>
