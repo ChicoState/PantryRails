@@ -17,7 +17,7 @@ This project was developed in Runy & Rails under the mac OS environment. Please 
 * Ruby Gems
   * rake
   * bundler
-* A Rails-compatible SQL database
+  * A Rails-compatible SQL database
   * PostgreSQL (recommended)
   * MySql (works ok, too)
 
