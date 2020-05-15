@@ -81,10 +81,10 @@ Once the above installation is successful, clone the PantryRails repository and 
 
 ## UML Diagram
 1. *UML diagram before implementation of class ApplianceInventory:*
-![UML of Food Pantry - Ruby on Rails](before.png "PantryRails - UML class diagram of Food Pantry before implementation of class ApplianceInventory")
+![UML of Food Pantry - Ruby on Rails](docs/before.png "PantryRails - UML class diagram of Food Pantry before implementation of class ApplianceInventory")
 
 2. *UML diagram after implementation of class ApplianceInventory:*
-![UML of Food Pantry - Ruby on Rails](after.png "PantryRails - UML class diagram of Food Pantry after implementation of class ApplianceInventory")
+![UML of Food Pantry - Ruby on Rails](docs/after.png "PantryRails - UML class diagram of Food Pantry after implementation of class ApplianceInventory")
 
 ## Pull Request Process
 
