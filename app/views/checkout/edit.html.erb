@@ -1,0 +1,42 @@
+<table style="width:100%">
+    <tr>
+        <td><h1>Edit Appliance</h1></td>
+        <td style="float:right">
+            <a href="/appinventory">
+                <button type="button" class="btn btn-info" value="edit">Goto Items</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<%= form_for :appinventory, url: checkout_path(@checkout), method: :patch do |f| %>
+    <% if @checkout.errors.any? %>
+        <% @checkout.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger"><%=msg %></div>
+        <% end %>
+    <% end %>
+    <table class="table table-striped">
+         <tr>
+        <td><%= f.label :'Item Name' %></td>
+        <td><%= f.text_field(:itemname, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Item Quantity count' %></td>
+        <td><%= f.text_field(:itemquantitybycount, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Item Quantity weight' %></td>
+        <td><%= f.text_field(:itemquantitybyweight, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Checkout date' %></td>
+        <td><%= f.text_field(:checkoutdate, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Staff ID' %></td>
+        <td><%= f.text_field(:staffid, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td colspan="2"><%= f.submit({:class => 'btn btn-primary'}) %></td>
+    </tr>
+    </table>
+<% end %>
