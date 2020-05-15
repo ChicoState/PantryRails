@@ -8,9 +8,11 @@ Rails.application.routes.draw do
   get 'checkout' => 'pages#checkout'
   get 'student' => 'pages#student'
   get 'appinventory' => 'pages#appinventory'
+  get 'reducingwaste' => 'pages#reducingwaste'
   resources :items 
   resources :provider
   resources :appinventory 
   resources :generatereport
+  resources :reducingwaste
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
