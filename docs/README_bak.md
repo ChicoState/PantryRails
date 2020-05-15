@@ -1,17 +1,17 @@
 ## Food Pantry
 
-Our goal is to develop a food pantry for students in a university, who can have access to enough food to eat. We want to create a system to manage the inventory of a food pantry, as well as generate reports about the pantry's activities. We are trying to design a website that manages the information. The system keeps track of all the information and students will check out items by visiting the food pantry in person, selecting items, and then checking out with a food pantry staff member. 
+Our goal is to develop a food pantry for students in a university, who can have access to enough food to eat. We want to create a system to manage the inventory of a food pantry, as well as generate reports about the pantry's activities. We are trying to design a website that manages the information. The system keeps track of all the information and students will check out items by visiting the food pantry in person, selecting items, and then checking out with a food pantry staff member.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Technologies
-Project is created with 
+Project is created with
 * Ruby on Rails
 * MySql
 
 ## Prerequisites / Installation / Deployment
-The installation part and gettign started with the project development is detailed in the [CONTRIBUTING.md](CONTRIBUTING.md). 
+The installation part and gettign started with the project development is detailed in the [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contributing
 Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to the project.
@@ -22,7 +22,7 @@ We use Travis CI for our project. It runs our programs tests every time we commi
 ## Static Analysis Tool
 We use [Rubocop](https://github.com/rubocop-hq/rubocop) as static code alalyser for the project PantryRails. The official docs for RuboCop can be found [here](https://docs.rubocop.org/en/stable/)
 
-By using RuboCop, we will not only get to perform a code review as Ruby, but also learn about Rails’ specific improvement points. 
+By using RuboCop, we will not only get to perform a code review as Ruby, but also learn about Rails’ specific improvement points.
 
 ## Continuous Integration Status
 [![Build Status](https://travis-ci.org/ChicoState/PantryRails.svg?branch=travis)](https://travis-ci.org/ChicoState/PantryRails)
@@ -41,4 +41,8 @@ Our instructor [Kevin Buffardi, Ph.D.](https://www.csuchico.edu/csci/people/facu
 * [Google Scholar](https://scholar.google.com/citations?user=KmIt5HIAAAAJ&hl=en)
 
 ## UML Diagram
-![UML of Food Pantry - Ruby on Rails](UML_Pantry_V2.png "PantryRails - UML class diagram of Food Pantry")
+1. *UML diagram before implementation of class ApplianceInventory:*
+![UML of Food Pantry - Ruby on Rails](before.png "PantryRails - UML class diagram of Food Pantry before implementation of class ApplianceInventory")
+
+2. *UML diagram after implementation of class ApplianceInventory:*
+![UML of Food Pantry - Ruby on Rails](after.png "PantryRails - UML class diagram of Food Pantry after implementation of class ApplianceInventory")
