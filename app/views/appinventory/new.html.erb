@@ -1,1 +1,30 @@
-<h1>Add Appliance Inventory</h1>
+<table style="width:100%">
+    <tr>
+        <td><h1>Add new appliance</h1></td>
+        <td style="float:right">
+            <a href="/">
+                <button type="button" class="btn btn-info" value="edit">Dashboard</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<%= form_for :'items', url: items_path do |f| %>
+<% if @items.errors.any? %>
+    <% @items.errors.full_messages.each do |msg| %>
+        <div class="alert alert-danger"><%=msg %></div>
+    <% end %>
+<% end %>
+<table class="table table-striped">
+    <tr>
+        <td><%= f.label :Name %></td>
+        <td><%= f.text_field(:name, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Appliance Quantity' %></td>
+        <td><%= f.text_field(:totalquantity, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td colspan="2"><%= f.submit({:class => 'btn btn-primary'}) %></td>
+    </tr>
+</table>
+<% end %>
