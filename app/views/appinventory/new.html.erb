@@ -9,11 +9,7 @@
     </tr>
 </table>
 <%= form_for :'appinventory', url: appinventory_path do |f| %>
-<% if @appinventory.errors.any? %>
-    <% @appinventory.errors.full_messages.each do |msg| %>
-        <div class="alert alert-danger"><%=msg %></div>
-    <% end %>
-<% end %>
+
 <table class="table table-striped">
     <tr>
         <td><%= f.label :Name %></td>

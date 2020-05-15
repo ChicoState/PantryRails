@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'additem' => 'items#additem'
   get 'checkout' => 'pages#checkout'
   get 'student' => 'pages#student'
+  get 'appinventory' => 'pages#appinventory'
   resources :items 
   resources :provider
   resources :appinventory 
