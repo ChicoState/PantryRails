@@ -1,22 +1,22 @@
 class AppinventoryController < ApplicationController
     def index
         # redirect_to(:action=>'new')
-        @items = Item.all
+        @appinventory = AppInventory.all
     end
     
     def new
-        @items = Item.new
+        @appinventory = AppInventory.new
     end
     
     def show
-        @items = Item.find(params[:id])
+        @appinventory = AppInventory.find(params[:id])
     end
 
     def create
         # render plain: params[:additem].inspect
-        @appinventory = AppInventory.new(appinventory_params)
-        if(@appinventory.save)
-            redirect_to @appinventory
+        @items = AppInventory.new(items_params)
+        if(@items.save)
+            redirect_to @items
         else
             render 'new'
         end
