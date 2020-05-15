@@ -14,9 +14,9 @@ class AppinventoryController < ApplicationController
 
     def create
         # render plain: params[:additem].inspect
-        @items = AppInventory.new(items_params)
-        if(@items.save)
-            redirect_to @items
+        @appinventory = AppInventory.new(items_params)
+        if(@appinventory.save)
+            redirect_to @appinventory
         else
             render 'new'
         end
