@@ -8,6 +8,7 @@ class ReducingwasteController < ApplicationController
     end
 
     def create
-        render plain: params[:reducingwaste].inpect
+        #render plain: params[:reducingwaste].inspect
+        
     end
 end
