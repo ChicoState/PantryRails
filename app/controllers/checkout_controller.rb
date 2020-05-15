@@ -1,46 +1,48 @@
 class CheckoutController < ApplicationController
-    # def reducingwaste
-    #     @title = 'Reducing Waste';
-    #     @content = 'This is the Reducing Waste page'
-    # end
+    def index
+        # redirect_to(:action=>'new')
+        @checkout = Checkout.all
+    end
+    
+    def new
+        @checkout = Checkout.new
+    end
+    
+    def show
+        @checkout = Checkout.find(params[:id])
+    end
 
-    # def measuringimpact
-    #     @title = 'Measuring Impact';
-    #     @content = 'This is the Measuring Impact page'
-    # end
+    def create
+        # render plain: params[:additem].inspect
+        @checkout = Checkout.new(checkout_params)
+        if(@checkout.save)
+            redirect_to @checkout
+        else
+            render 'new'
+        end
+    end
 
-    # def show
-    #     @additem = Additem.find(params[:id])
-    # end
+    def edit
+        @checkout = Checkout.find(params[:id])
+    end
 
-    # def additem
-    #     @title = 'Add Item';
-    #     @content = 'This is the Add Item page'
-    # end
+    def update
+        @checkout = Checkout.find(params[:id])
+        if(@checkout.update(checkout_params))
+            redirect_to @checkout
+        else
+            render 'edit'
+        end
+    end
 
-    # def create
-    #     # render plain: params[:additem].inspect
-    #     @additem = Additem.new(additem_params)
-    #     @additem.save
-    #     redirect_to @additem
-    # end
+    def destroy
+        @checkout = Checkout.find(params[:id])
+        @checkout.destroy
 
-    # private def additem_params
-    #     params.require(:additem).permit(:name, :donor, :quantity, :received, :expiry, :price)
-    # end
+        redirect_to checkout_path
+    end
 
-    # def inventory
-    #     @title = 'Inventory';
-    #     @content = 'This is the Inventory page'
-    # end
-
-    # def provider
-    #     @title = 'provider';
-    #     @content = 'This is the provider page'
-    # end
-
-    # def checkout
-    #     @title = 'checkout';
-    #     @content = 'This is the checkout page'
-    # end
+    private def checkout_params
+        params.require(:checkout).permit(:appliancename, :totalquantity)
+    end
 end
