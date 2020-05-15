@@ -43,6 +43,6 @@ class AppinventoryController < ApplicationController
     end
 
     private def appinventory_params
-        params.require(:appinventory).permit(:name, :quantity, :date)
+        params.require(:appinventory).permit(:name, :totalquantity)
     end
 end
