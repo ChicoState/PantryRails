@@ -42,7 +42,7 @@ Our instructor [Kevin Buffardi, Ph.D.](https://www.csuchico.edu/csci/people/facu
 
 ## UML Diagram
 1. *UML diagram before implementation of class ApplianceInventory:*
-![UML of Food Pantry - Ruby on Rails](before.png "PantryRails - UML class diagram of Food Pantry before implementation of class ApplianceInventory")
+<img src="before.png" width="100%" alt="PantryRails - UML class diagram of Food Pantry before implementation of class ApplianceInventory">
 
 2. *UML diagram after implementation of class ApplianceInventory:*
 ![UML of Food Pantry - Ruby on Rails](after.png "PantryRails - UML class diagram of Food Pantry after implementation of class ApplianceInventory")
