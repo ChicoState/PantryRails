@@ -8,9 +8,9 @@
         </td>
     </tr>
 </table>
-<%= form_for :'items', url: items_path do |f| %>
-<% if @items.errors.any? %>
-    <% @items.errors.full_messages.each do |msg| %>
+<%= form_for :'appinventory', url: appinventory_path do |f| %>
+<% if @appinventory.errors.any? %>
+    <% @appinventory.errors.full_messages.each do |msg| %>
         <div class="alert alert-danger"><%=msg %></div>
     <% end %>
 <% end %>
