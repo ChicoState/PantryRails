@@ -10,23 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_15_060145) do
-
-  create_table "additems", force: :cascade do |t|
-    t.text "name"
-    t.text "donor"
-    t.integer "quantity"
-    t.date "received"
-    t.date "expiry"
-    t.integer "price"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2020_05_15_084132) do
 
   create_table "app_inventories", force: :cascade do |t|
     t.string "appliancename"
     t.integer "totalquantity"
     t.datetime "date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "checkouts", force: :cascade do |t|
+    t.string "itemname"
+    t.integer "itemquantitycount"
+    t.string "itemquantityweight"
+    t.datetime "checkoutdate"
+    t.integer "staffid"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

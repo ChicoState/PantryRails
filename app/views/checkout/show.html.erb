@@ -1,0 +1,30 @@
+<h1>Checkout</h1>
+<table class="table table-striped">
+<tr>
+    <td><strong>Item name: </strong></td>
+    <td><%= @checkout.itemname %></td>
+</tr>
+<tr>
+    <td><strong>Quantity by count:</strong></td>
+    <td><%= @checkout.itemquantitybycount %></td>
+</tr>
+<tr>
+    <td><strong>Quantity by weight:</strong></td>
+    <td><%= @checkout.itemquantitybyweight %></td>
+</tr>
+<tr>
+    <td><strong>Checkout date:</strong></td>
+    <td><%= @checkout.checkoutdate %></td>
+</tr>
+<tr>
+    <td><strong>Staff ID:</strong></td>
+    <td><%= @checkout.staffid %></td>
+</tr>
+<tr>
+    <td colspan="2">
+        <a href="/checkout">
+            <button type="button" class="btn btn-info" value="edit">Go to checkout </button>
+        </a>
+    </td>
+</tr>
+</table>
