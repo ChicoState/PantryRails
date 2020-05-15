@@ -1,6 +1,6 @@
 <table style="width:100%">
     <tr>
-        <td><h1>Add new appliance</h1></td>
+        <td><h1>Add new checkout entry</h1></td>
         <td style="float:right">
             <a href="/">
                 <button type="button" class="btn btn-info" value="edit">Dashboard</button>
@@ -8,7 +8,7 @@
         </td>
     </tr>
 </table>
-<%= form_for :appinventory, url: appinventory_path do |f| %>
+<%= form_for :checkout, url: checkout_path do |f| %>
 
 <table class="table table-striped">
     <tr>
@@ -16,8 +16,20 @@
         <td><%= f.text_field(:itemname, {:class => 'form-control'}) %></td>
     </tr>
     <tr>
-        <td><%= f.label :'Item Quantity Count' %></td>
-        <td><%= f.text_field(:totalquantity, {:class => 'form-control'}) %></td>
+        <td><%= f.label :'Item Quantity count' %></td>
+        <td><%= f.text_field(:itemquantitybycount, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Item Quantity weight' %></td>
+        <td><%= f.text_field(:itemquantitybyweight, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Checkout date' %></td>
+        <td><%= f.text_field(:checkoutdate, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Staff ID' %></td>
+        <td><%= f.text_field(:staffid, {:class => 'form-control'}) %></td>
     </tr>
     <tr>
         <td colspan="2"><%= f.submit({:class => 'btn btn-primary'}) %></td>
