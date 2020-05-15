@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   resources :items 
   resources :provider
   resources :appinventory 
+  resources :generatereport
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
