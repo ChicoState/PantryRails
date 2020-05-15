@@ -1,1 +1,25 @@
-<h1> Reducing Waste </h1>
+<table style="width:100%">
+    <tr>
+        <td><h1>Reducing Waste</h1></td>
+        <td style="float:right">
+            <a href="/">
+                <button type="button" class="btn btn-info" value="edit">Dashboard</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<%= form_for :reducingwaste, url: reducingwaste_path do |f| %>
+<table class="table table-striped">
+    <tr>
+        <td><%= f.label :Name %></td>
+        <td><%= f.text_field(:appliancename, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :'Appliance Quantity' %></td>
+        <td><%= f.text_field(:totalquantity, {:class => 'form-control'}) %></td>
+    </tr>
+    <tr>
+        <td colspan="2"><%= f.submit({:class => 'btn btn-primary'}) %></td>
+    </tr>
+</table>
+<% end %>
