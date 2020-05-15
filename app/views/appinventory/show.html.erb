@@ -1,0 +1,18 @@
+<h1>Appliance Inventory</h1>
+<table class="table table-striped">
+<tr>
+    <td><strong>Name: </strong></td>
+    <td><%= @appinventory.appliancename %></td>
+</tr>
+<tr>
+    <td><strong>Quantity:</strong></td>
+    <td><%= @appinventory.totalquantity %></td>
+</tr>
+<tr>
+    <td colspan="2">
+        <a href="/items">
+            <button type="button" class="btn btn-info" value="edit">Go to Appliance Inventory</button>
+        </a>
+    </td>
+</tr>
+</table>

@@ -1,0 +1,46 @@
+<table style="width:100%">
+    <tr>
+        <td><h1>Edit Item</h1></td>
+        <td style="float:right">
+            <a href="/items">
+                <button type="button" class="btn btn-info" value="edit">Goto Items</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<%= form_for :items, url: item_path(@items), method: :patch do |f| %>
+    <% if @items.errors.any? %>
+        <% @items.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger"><%=msg %></div>
+        <% end %>
+    <% end %>
+    <table class="table table-striped">
+        <tr>
+            <td><%= f.label :Name %></td>
+            <td><%= f.text_field(:name, {:class => 'form-control'}) %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :Donor %></td>
+            <td><%= f.text_field(:donor, {:class => 'form-control'}) %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :Quantity %></td>
+            <td><%= f.text_field(:quantity, {:class => 'form-control'}) %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :'Received Date' %></td>
+            <td><%= f.date_field(:received, {:class => 'form-control'}) %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :'Expiry Date' %></td>
+            <td><%= f.date_field(:expiry, {:class => 'form-control'}) %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :Price %></td>
+            <td><%= f.text_field(:price, {:class => 'form-control'}) %></td>
+        </tr>
+        <tr>
+            <td colspan="2"><%= f.submit({:class => 'btn btn-primary'}) %></td>
+        </tr>
+    </table>
+<% end %>
