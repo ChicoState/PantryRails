@@ -53,6 +53,8 @@ group :development do
   gem 'binding_of_caller', '~> 0.8.0'
   # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
   gem 'pry', '~> 0.13.1'
+  # a code metric tool for rails codes, written in Ruby.
+  gem 'rails_best_practices', '~> 1.20'
 end
 
 group :test do
