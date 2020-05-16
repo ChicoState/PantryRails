@@ -108,6 +108,13 @@ The Student class has a function StudentHistory that returns a history of all tr
 
 The class MeasuringImpact has a ton of important functionality, it checks the total available quantity of each and every Item in the inventory, it also tracks the total checkouts made, total students checked out and total checkouts by each student. It also helps keep track of each item as to how much quantity of each Item has been used well and if any amount of food has been wasted.
 
+#### New Requirement to the UML diagram(after.png) after implementing the ApplianceInventory class:
+
+The class ApplianceInventory enables students rent out the kitchen appliances and keeps track of all the rental activity. It keeps track of total quantity of appliances, the number of each appliance that have been rented out and also the number of remaining pieces in the Inventory. It also has a function
+
+
+The ApplianceCheckout class manages the checkouts including appliances. The functions in this class help maintaining a functional appliance inventory by recording all checkouts made by students.
+
 ## Pull Request Process
 
 1. Branch from the travis branch and, if needed, rebase to the current master branch before submitting your pull request. If it doesn't merge cleanly with master you may be asked to rebase your changes.
