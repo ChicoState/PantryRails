@@ -18,4 +18,18 @@ class ReducingwasteController < ApplicationController
             render :new
         end
     end
+
+    def show
+        @scrap = Scrap.find params[:id]
+        @scrapscomments = @scrap.scrapscomments
+        @scrapscomment = Scrapscomment.new
+    end
+
+    def update
+        if @scrap.update scrap_params
+          redirect_to scrap_path(@scrap)
+        else
+          render :edit
+        end
+    end
 end
