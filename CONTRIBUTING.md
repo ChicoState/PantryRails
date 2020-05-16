@@ -91,10 +91,10 @@ Once the above installation is successful, clone the PantryRails repository and 
 In our UML diagram, we have implemented the Abstract Factory Design Pattern. The requirement specifies two types of Donators, the ones that donate food for free and the ones that provide a discount on the food products that the pantry purchases.
 As the providers of both types will have some functionality in common, we have made the Provider class an Abstract Provider class and two concrete classes, ConcreteClassFree and ConcreteClassDiscount. This creates an efficient design as we can use the two classes separately whenever required without any tight coupling.
 
-# The Abstract Class Provider performs the following functionality:
+#### The Abstract Class Provider performs the following functionality:
 Enables addition of  a provider, editing provider details, get and set ProviderName and ProviderID.
 
-# The Concrete classes perform the following functionality:
+#### The Concrete classes perform the following functionality:
 The function is anonymous returns a bool type that specifies if the providers wish to remain anonymous or not.
 The function getItemPrice, returns the price of each Item and the functions worthOfDonatedItems and worthOfDiscountedItems calculate and return the worth of respective items.
 
