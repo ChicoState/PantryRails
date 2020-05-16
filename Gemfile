@@ -47,6 +47,8 @@ group :development do
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   # Make errors better looking
   gem 'better_errors', '~> 2.7', '>= 2.7.1'
+  # Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack.
+  gem 'binding_of_caller', '~> 0.8.0'
 end
 
 group :test do
