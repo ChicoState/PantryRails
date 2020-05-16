@@ -1,0 +1,2 @@
+module AppliancecheckoutHelper
+end
