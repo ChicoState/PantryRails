@@ -5,11 +5,17 @@ class ReducingwasteController < ApplicationController
     end
 
     def new
-
+        @scrap = Scrap.new
     end
 
     def create
         #render plain: params[:reducingwaste].inspect
-        
+        @scrap = Scrap.new scrap_params
+        @scrap.user = current_user
+        if @scrap.save
+            redirect_to scraps_path
+        else
+            render :new
+        end
     end
 end
