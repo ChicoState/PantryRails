@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Simple authorization solution for Rails. All permissions are stored in a single location.
 gem 'cancancan', '~> 3.1'
+# help to kill N+1 queries and unused eager loading.
+gem 'bullet', '~> 6.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
