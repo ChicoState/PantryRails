@@ -32,4 +32,13 @@ class ReducingwasteController < ApplicationController
           render :edit
         end
     end
+
+    def destroy
+        @scrap.destroy
+        redirect_to scraps_path
+    end
+
+    def find_scraps
+        @scrap = Scrap.find params[:id]
+      end
 end
