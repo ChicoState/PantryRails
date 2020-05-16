@@ -91,18 +91,22 @@ Once the above installation is successful, clone the PantryRails repository and 
 In our UML diagram, we have implemented the Abstract Factory Design Pattern. The requirement specifies two types of Donators, the ones that donate food for free and the ones that provide a discount on the food products that the pantry purchases.
 As the providers of both types will have some functionality in common, we have made the Provider class an Abstract Provider class and two concrete classes, ConcreteClassFree and ConcreteClassDiscount. This creates an efficient design as we can use the two classes separately whenever required without any tight coupling.
 
-The Abstract Class Provider performs the following functionality:
+# The Abstract Class Provider performs the following functionality:
 Enables addition of  a provider, editing provider details, get and set ProviderName and ProviderID.
 
-The Concrete classes perform the following functionality:
+# The Concrete classes perform the following functionality:
 The function is anonymous returns a bool type that specifies if the providers wish to remain anonymous or not.
 The function getItemPrice, returns the price of each Item and the functions worthOfDonatedItems and worthOfDiscountedItems calculate and return the worth of respective items.
 
-The Checkout class manages all the Checkout functionality like, adding Items to student’s cart, removing them and return all items present in cart.
+The Checkout class manages all the **Checkout functionality** like, adding Items to student’s cart, removing them and return all items present in cart.
 
 The Report class performs all activities related to generating a waste reduction report. It performs the activity of returning the Items Expiring on the present day, Expired items and also lets the admins update what they have disposed and in what quantity, via the disposedItems() functions.
 
 The Items class records the details of each and every item in the Inventory. It also returns available items and their quantity. The function ItemStatus returns either of the three enum types, outOfStock, Instore and Disposed depending on what the current status of each item.
+
+The Student class has a function StudentHistory that returns a history of all transactions made by the student and another function that has a track of the students cart.
+
+The class MeasuringImpact has a ton of important functionality, it checks the total available quantity of each and every Item in the inventory, it also tracks the total checkouts made, total students checked out and total checkouts by each student. It also helps keep track of each item as to how much quantity of each Item has been used well and if any amount of food has been wasted.
 
 ## Pull Request Process
 
