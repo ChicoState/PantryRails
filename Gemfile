@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Simple authorization solution for Rails. All permissions are stored in a single location.
+gem 'cancancan', '~> 3.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -49,6 +51,10 @@ group :development do
   gem 'better_errors', '~> 2.7', '>= 2.7.1'
   # Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack.
   gem 'binding_of_caller', '~> 0.8.0'
+  # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
+  gem 'pry', '~> 0.13.1'
+  # a code metric tool for rails codes, written in Ruby.
+  gem 'rails_best_practices', '~> 1.20'
 end
 
 group :test do
