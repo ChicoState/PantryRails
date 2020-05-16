@@ -49,6 +49,8 @@ group :development do
   gem 'better_errors', '~> 2.7', '>= 2.7.1'
   # Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack.
   gem 'binding_of_caller', '~> 0.8.0'
+  # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
+  gem 'pry', '~> 0.13.1'
 end
 
 group :test do
